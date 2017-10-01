@@ -1,0 +1,6 @@
+framework module Pods_medicalConsultation {
+  umbrella header "Pods-medicalConsultation-umbrella.h"
+
+  export *
+  module * { export * }
+}
