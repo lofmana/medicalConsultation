@@ -11,6 +11,10 @@
 		66150E981F49808E00CA87BE /* OtherInformationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66150E971F49808E00CA87BE /* OtherInformationStep2ViewController.swift */; };
 		661B91701F7B9AC20017BDAB /* PostConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661B916F1F7B9AC20017BDAB /* PostConsultationViewController.swift */; };
 		6620823B1EF91B67001D693B /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6620823A1EF91B67001D693B /* GoogleToolboxForMac.framework */; };
+		662508DC1F81582D00BC54CB /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508DB1F81582D00BC54CB /* ComposeViewController.swift */; };
+		662508DE1F81584100BC54CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508DD1F81584100BC54CB /* HomeViewController.swift */; };
+		662508E01F81584D00BC54CB /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508DF1F81584D00BC54CB /* loginViewController.swift */; };
+		662508E21F81585A00BC54CB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508E11F81585A00BC54CB /* RegisterViewController.swift */; };
 		6633C4711EFBB6BB006EF136 /* ApiAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6633C46D1EFBB6BB006EF136 /* ApiAI.framework */; };
 		6633C4721EFBB6BB006EF136 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6633C46E1EFBB6BB006EF136 /* GTMSessionFetcher.framework */; };
 		6633C4731EFBB6BB006EF136 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6633C46F1EFBB6BB006EF136 /* Locksmith.framework */; };
@@ -33,7 +37,6 @@
 		665F42B31F06298900B19574 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F42AC1F06298900B19574 /* PreviewViewController.swift */; };
 		665F42B41F06298900B19574 /* InvoiceComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F42AD1F06298900B19574 /* InvoiceComposer.swift */; };
 		665F42B51F06298900B19574 /* CustomPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F42AE1F06298900B19574 /* CustomPrintPageRenderer.swift */; };
-		6663766D1F06C0C2001B0C73 /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 6663766C1F06C0C2001B0C73 /* docs */; };
 		666A84B21F0B8F9E007D4EFC /* OtherInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A84B11F0B8F9E007D4EFC /* OtherInformationViewController.swift */; };
 		66C952C51EF8F89B00C36E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C952C41EF8F89B00C36E3D /* AppDelegate.swift */; };
 		66C952C71EF8F89B00C36E3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C952C61EF8F89B00C36E3D /* MainViewController.swift */; };
@@ -54,10 +57,6 @@
 		66EE027A1F793EC600C95AFF /* box-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EE02751F793EC600C95AFF /* box-shadow.png */; };
 		66EE027B1F793EC600C95AFF /* login_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EE02761F793EC600C95AFF /* login_box.png */; };
 		66EE027C1F793EC600C95AFF /* dd2f9f1e2fa703f627ba967708f545d286745cc4_hq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66EE02771F793EC600C95AFF /* dd2f9f1e2fa703f627ba967708f545d286745cc4_hq.jpg */; };
-		66EE02831F79414500C95AFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE027F1F79414500C95AFF /* HomeViewController.swift */; };
-		66EE02841F79414500C95AFF /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE02801F79414500C95AFF /* loginViewController.swift */; };
-		66EE02851F79414500C95AFF /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE02811F79414500C95AFF /* ComposeViewController.swift */; };
-		66EE02861F79414500C95AFF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE02821F79414500C95AFF /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +64,10 @@
 		661B916F1F7B9AC20017BDAB /* PostConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostConsultationViewController.swift; sourceTree = "<group>"; };
 		661BEA101F024E8C0016F864 /* siriEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = siriEnd.wav; path = medicalConsultation/siriEnd.wav; sourceTree = "<group>"; };
 		6620823A1EF91B67001D693B /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/medicalConsultation-dlncmhyzorugfwgaolrrdvmsvefn/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		662508DB1F81582D00BC54CB /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		662508DD1F81584100BC54CB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		662508DF1F81584D00BC54CB /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		662508E11F81585A00BC54CB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6633C46D1EFBB6BB006EF136 /* ApiAI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiAI.framework; path = "Pods/../build/Debug-iphoneos/ApiAI/ApiAI.framework"; sourceTree = "<group>"; };
 		6633C46E1EFBB6BB006EF136 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../../../Library/Developer/Xcode/DerivedData/medicalConsultation-dlncmhyzorugfwgaolrrdvmsvefn/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
 		6633C46F1EFBB6BB006EF136 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = "../../../Library/Developer/Xcode/DerivedData/medicalConsultation-dlncmhyzorugfwgaolrrdvmsvefn/Build/Products/Debug-iphonesimulator/Locksmith/Locksmith.framework"; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		665F42AC1F06298900B19574 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		665F42AD1F06298900B19574 /* InvoiceComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceComposer.swift; sourceTree = "<group>"; };
 		665F42AE1F06298900B19574 /* CustomPrintPageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPrintPageRenderer.swift; sourceTree = "<group>"; };
-		6663766C1F06C0C2001B0C73 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 		666A84B11F0B8F9E007D4EFC /* OtherInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherInformationViewController.swift; sourceTree = "<group>"; };
 		66C952C11EF8F89B00C36E3D /* medicalConsultation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicalConsultation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C952C41EF8F89B00C36E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,10 +112,6 @@
 		66EE02751F793EC600C95AFF /* box-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-shadow.png"; sourceTree = "<group>"; };
 		66EE02761F793EC600C95AFF /* login_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_box.png; sourceTree = "<group>"; };
 		66EE02771F793EC600C95AFF /* dd2f9f1e2fa703f627ba967708f545d286745cc4_hq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dd2f9f1e2fa703f627ba967708f545d286745cc4_hq.jpg; sourceTree = "<group>"; };
-		66EE027F1F79414500C95AFF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "../messagingapp-3/messagingapp/HomeViewController.swift"; sourceTree = "<group>"; };
-		66EE02801F79414500C95AFF /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = "../messagingapp-3/messagingapp/loginViewController.swift"; sourceTree = "<group>"; };
-		66EE02811F79414500C95AFF /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComposeViewController.swift; path = "../messagingapp-3/messagingapp/ComposeViewController.swift"; sourceTree = "<group>"; };
-		66EE02821F79414500C95AFF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = "../messagingapp-3/messagingapp/RegisterViewController.swift"; sourceTree = "<group>"; };
 		6E4D06BCD9E2855AE11AAAA2 /* Pods-medicalConsultation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicalConsultation.release.xcconfig"; path = "Pods/Target Support Files/Pods-medicalConsultation/Pods-medicalConsultation.release.xcconfig"; sourceTree = "<group>"; };
 		D72A778299986E1BCAA68CE3 /* Pods-medicalConsultation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicalConsultation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-medicalConsultation/Pods-medicalConsultation.debug.xcconfig"; sourceTree = "<group>"; };
 		EC6C4B805B820E1B3EED9D67 /* Pods_medicalConsultation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicalConsultation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,10 +149,10 @@
 		6603A0871F79354000C7E986 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				66EE02811F79414500C95AFF /* ComposeViewController.swift */,
-				66EE027F1F79414500C95AFF /* HomeViewController.swift */,
-				66EE02801F79414500C95AFF /* loginViewController.swift */,
-				66EE02821F79414500C95AFF /* RegisterViewController.swift */,
+				662508E11F81585A00BC54CB /* RegisterViewController.swift */,
+				662508DF1F81584D00BC54CB /* loginViewController.swift */,
+				662508DD1F81584100BC54CB /* HomeViewController.swift */,
+				662508DB1F81582D00BC54CB /* ComposeViewController.swift */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -269,7 +267,6 @@
 		66C952C31EF8F89B00C36E3D /* medicalConsultation */ = {
 			isa = PBXGroup;
 			children = (
-				6663766C1F06C0C2001B0C73 /* docs */,
 				66C952C41EF8F89B00C36E3D /* AppDelegate.swift */,
 				66C952C81EF8F89B00C36E3D /* Main.storyboard */,
 				66C952CB1EF8F89B00C36E3D /* Assets.xcassets */,
@@ -377,7 +374,6 @@
 				6633C47C1EFBF94C006EF136 /* doctor.png in Resources */,
 				665F42A21F06293300B19574 /* invoice2.html in Resources */,
 				66C952CF1EF8F89B00C36E3D /* LaunchScreen.storyboard in Resources */,
-				6663766D1F06C0C2001B0C73 /* docs in Resources */,
 				66EE02721F793E3F00C95AFF /* loginbackground.png in Resources */,
 				665F42A31F06293300B19574 /* last_item.html in Resources */,
 				66EE02791F793EC600C95AFF /* 3ZR77.png in Resources */,
@@ -458,21 +454,21 @@
 				66C952C71EF8F89B00C36E3D /* MainViewController.swift in Sources */,
 				665F42B01F06298900B19574 /* InvoiceListViewController.swift in Sources */,
 				665F42B31F06298900B19574 /* PreviewViewController.swift in Sources */,
-				66EE02831F79414500C95AFF /* HomeViewController.swift in Sources */,
+				662508DE1F81584100BC54CB /* HomeViewController.swift in Sources */,
+				662508DC1F81582D00BC54CB /* ComposeViewController.swift in Sources */,
 				66150E981F49808E00CA87BE /* OtherInformationStep2ViewController.swift in Sources */,
 				665F42B41F06298900B19574 /* InvoiceComposer.swift in Sources */,
+				662508E21F81585A00BC54CB /* RegisterViewController.swift in Sources */,
 				66C952C51EF8F89B00C36E3D /* AppDelegate.swift in Sources */,
 				665F42B21F06298900B19574 /* AddItemViewController.swift in Sources */,
 				66DC1E2C1EFC374B00329E53 /* VoiceHomeViewController.swift in Sources */,
-				66EE02851F79414500C95AFF /* ComposeViewController.swift in Sources */,
 				665F42B51F06298900B19574 /* CustomPrintPageRenderer.swift in Sources */,
 				661B91701F7B9AC20017BDAB /* PostConsultationViewController.swift in Sources */,
-				66EE02861F79414500C95AFF /* RegisterViewController.swift in Sources */,
+				662508E01F81584D00BC54CB /* loginViewController.swift in Sources */,
 				666A84B21F0B8F9E007D4EFC /* OtherInformationViewController.swift in Sources */,
 				6633C4781EFBBD18006EF136 /* PreMainViewController.swift in Sources */,
 				665ED6611F7D34030025D2AC /* TableViewCellFever.swift in Sources */,
 				665ED65B1F7D10D70025D2AC /* FirstStepSelectionViewController.swift in Sources */,
-				66EE02841F79414500C95AFF /* loginViewController.swift in Sources */,
 				665ED65D1F7D10FC0025D2AC /* SecondStepSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
