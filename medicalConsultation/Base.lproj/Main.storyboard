@@ -504,7 +504,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipient Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkJ-gj-qsn">
-                                <rect key="frame" x="20" y="72" width="189" height="21"/>
+                                <rect key="frame" x="20" y="28" width="189" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="L8Y-kv-a2N"/>
                                     <constraint firstAttribute="height" constant="21" id="cu8-FA-aBf"/>
@@ -514,7 +514,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invoice Items:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-cd-dU6">
-                                <rect key="frame" x="20" y="234" width="189" height="21"/>
+                                <rect key="frame" x="20" y="190" width="189" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="UQ4-lL-zJb"/>
                                     <constraint firstAttribute="width" constant="189" id="mIr-qb-8X1"/>
@@ -535,7 +535,7 @@
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4uL-Uh-iHD">
-                                <rect key="frame" x="20" y="255" width="374" height="426"/>
+                                <rect key="frame" x="20" y="211" width="374" height="470"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemCell" textLabel="qdE-1x-sHh" detailTextLabel="V5t-J3-Dai" style="IBUITableViewCellStyleValue1" id="Bbh-ud-jCv">
@@ -565,7 +565,7 @@
                                 </prototypes>
                             </tableView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FQJ-YQ-q7V">
-                                <rect key="frame" x="20" y="98" width="374" height="128"/>
+                                <rect key="frame" x="20" y="54" width="374" height="128"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="a9R-ND-Bjl"/>
@@ -633,7 +633,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyM-gD-hsI">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="-44" width="414" height="780"/>
                                 <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -682,7 +682,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eff-b4-ete">
-                                <rect key="frame" x="20" y="158" width="374" height="30"/>
+                                <rect key="frame" x="20" y="114" width="374" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OaG-YE-XSt"/>
                                 </constraints>
@@ -690,7 +690,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item or Service description..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZe-zj-jKc">
-                                <rect key="frame" x="20" y="98" width="374" height="30"/>
+                                <rect key="frame" x="20" y="54" width="374" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ate-xa-t2F"/>
                                 </constraints>
@@ -1215,7 +1215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please select the illness that best describe your current body condition.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-3r-0qH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please select the illness that best describe your current body condition..!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-3r-0qH">
                                 <rect key="frame" x="20" y="20" width="374" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
