@@ -31,7 +31,7 @@ class SecondStepSelectionViewController: UIViewController {
         
        // self.ref = Database.database().reference()
         
-        let databaseRef = Database.database().reference().child("Disease")
+  //     let databaseRef = Database.database().reference()
 //
 //        databaseRef.child("Disease").child("Cold").observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
 //
@@ -47,8 +47,28 @@ class SecondStepSelectionViewController: UIViewController {
 //
 //        })
       
-        let query = databaseRef.queryOrdered(byChild: "sym1").queryEqual(toValue: "1")
+      //  let query = databaseRef.queryOrdered(byChild: "sym1").queryEqual(toValue: "1")
 
+        for item in finalArray {
+        
+        for var i in 1...3
+        {
+            
+//        print(item)
+//        print(String(temp))
+            
+        let ref = Database.database().reference().child("Disease").queryOrdered(byChild: "sym\(String(i))").queryEqual(toValue : String(item))
+        
+        ref.observe(.value, with:{ (snapshot: DataSnapshot) in
+            for snap in snapshot.children {
+                print((snap as! DataSnapshot).key)
+            }
+        })
+            
+        }
+        
+        }
+        
      
     }
 
