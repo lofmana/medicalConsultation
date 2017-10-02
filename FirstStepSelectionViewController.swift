@@ -11,6 +11,8 @@ import FirebaseDatabase
 import SVProgressHUD
 import FirebaseAuth
 
+var finalArray = [Int]()
+
 class FirstStepSelectionViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
     
     
@@ -35,13 +37,13 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
             
             //code to execute when a child is added under post
             //take value from the snapshot and added it to the postData array
-            let question = snapshot.value as? String
+            let temp = snapshot.value as? String
             let qId = Int(snapshot.key)
             
-            if let actualQuestion = question, let actualId = qId // check if the row is empty
+            if let actualData = temp, let actualId = qId // check if the row is empty
             {
                 //append data to postData array
-                self.data.append(actualQuestion)
+                self.data.append(actualData)
                 self.id.append(actualId)
                 
                 
@@ -50,7 +52,7 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
                 SVProgressHUD.dismiss()
                 self.num = 1
                 print(actualId)
-                print(actualQuestion)
+                print(actualData)
                 
                 
                 
@@ -101,6 +103,10 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
     
 
     @IBAction func nextBtn(_ sender: Any) {
+        
+         self.performSegue(withIdentifier: "secondStep", sender: self)
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -112,6 +118,7 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
         {
             selectedCell.backgroundColor = .green
             cellArray.append(selectedCell.tag)
+            finalArray.append(selectedCell.tag)
             print(selectedCell.tag)
         }
             
@@ -119,6 +126,7 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
             selectedCell.backgroundColor = .white
             if let index = cellArray.index(of: selectedCell.tag) {
                 cellArray.remove(at: index)
+                finalArray.remove(at: index)
             }
             
         }

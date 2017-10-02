@@ -7,13 +7,49 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import SVProgressHUD
 
 class SecondStepSelectionViewController: UIViewController {
+    
+    @IBOutlet weak var labelOne: UILabel!
+    @IBOutlet weak var labelTwo: UILabel!
+    @IBOutlet weak var labelThree: UILabel!
+    
+    var ref : DatabaseReference?
+    var databaseHandle : DatabaseHandle?
+    var data = [String]()
+    var id = [Int]()
+    var cellArray = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        labelOne.text = String(finalArray[0])
+        
+        
+       // self.ref = Database.database().reference()
+        
+        let databaseRef = Database.database().reference().child("Disease")
+//
+//        databaseRef.child("Disease").child("Cold").observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
+//
+//            if snapshot.hasChild("Cold"){
+//
+//                print("true rooms exist")
+//
+//            }else{
+//
+//                print("false room doesn't exist")
+//            }
+//
+//
+//        })
+      
+        let query = databaseRef.queryOrdered(byChild: "sym1").queryEqual(toValue: "1")
+
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +57,5 @@ class SecondStepSelectionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
