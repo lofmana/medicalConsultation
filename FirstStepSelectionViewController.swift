@@ -11,7 +11,9 @@ import FirebaseDatabase
 import SVProgressHUD
 import FirebaseAuth
 
-var finalArray = [Int]()
+var finalArray = [String]()
+var finalArrayId = [Int]()
+
 
 class FirstStepSelectionViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
     
@@ -22,6 +24,7 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
     var data = [String]()
     var id = [Int]()
     var cellArray = [Int]()
+     var counts: [String: Int] = [:]
     
     var num = 0
     
@@ -104,6 +107,9 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
 
     @IBAction func nextBtn(_ sender: Any) {
         
+        // Put your code which should be executed with a delay here
+     
+        
          self.performSegue(withIdentifier: "secondStep", sender: self)
         
         
@@ -118,7 +124,8 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
         {
             selectedCell.backgroundColor = .green
             cellArray.append(selectedCell.tag)
-            finalArray.append(selectedCell.tag)
+            finalArray.append((selectedCell.textLabel?.text)!)
+            finalArrayId.append(selectedCell.tag)
             print(selectedCell.tag)
         }
             
@@ -127,6 +134,7 @@ class FirstStepSelectionViewController: UIViewController , UITableViewDelegate ,
             if let index = cellArray.index(of: selectedCell.tag) {
                 cellArray.remove(at: index)
                 finalArray.remove(at: index)
+                finalArrayId.remove(at : index)
             }
             
         }
