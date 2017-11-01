@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		34E6CB4FA46F2A4A6AA64170 /* Pods_medicalConsultation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6C4B805B820E1B3EED9D67 /* Pods_medicalConsultation.framework */; };
 		66150E981F49808E00CA87BE /* OtherInformationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66150E971F49808E00CA87BE /* OtherInformationStep2ViewController.swift */; };
+		661883691FAA4A42007E4C8C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661883681FAA4A42007E4C8C /* RegisterViewController.swift */; };
 		661B91701F7B9AC20017BDAB /* PostConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661B916F1F7B9AC20017BDAB /* PostConsultationViewController.swift */; };
 		6620823B1EF91B67001D693B /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6620823A1EF91B67001D693B /* GoogleToolboxForMac.framework */; };
 		662508DC1F81582D00BC54CB /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508DB1F81582D00BC54CB /* ComposeViewController.swift */; };
 		662508DE1F81584100BC54CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508DD1F81584100BC54CB /* HomeViewController.swift */; };
 		662508E01F81584D00BC54CB /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508DF1F81584D00BC54CB /* loginViewController.swift */; };
-		662508E21F81585A00BC54CB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662508E11F81585A00BC54CB /* RegisterViewController.swift */; };
 		6633C4711EFBB6BB006EF136 /* ApiAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6633C46D1EFBB6BB006EF136 /* ApiAI.framework */; };
 		6633C4721EFBB6BB006EF136 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6633C46E1EFBB6BB006EF136 /* GTMSessionFetcher.framework */; };
 		6633C4731EFBB6BB006EF136 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6633C46F1EFBB6BB006EF136 /* Locksmith.framework */; };
@@ -61,13 +61,13 @@
 
 /* Begin PBXFileReference section */
 		66150E971F49808E00CA87BE /* OtherInformationStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherInformationStep2ViewController.swift; sourceTree = "<group>"; };
+		661883681FAA4A42007E4C8C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		661B916F1F7B9AC20017BDAB /* PostConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostConsultationViewController.swift; sourceTree = "<group>"; };
 		661BEA101F024E8C0016F864 /* siriEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = siriEnd.wav; path = medicalConsultation/siriEnd.wav; sourceTree = "<group>"; };
 		6620823A1EF91B67001D693B /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/medicalConsultation-dlncmhyzorugfwgaolrrdvmsvefn/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		662508DB1F81582D00BC54CB /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		662508DD1F81584100BC54CB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		662508DF1F81584D00BC54CB /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		662508E11F81585A00BC54CB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6633C46D1EFBB6BB006EF136 /* ApiAI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiAI.framework; path = "Pods/../build/Debug-iphoneos/ApiAI/ApiAI.framework"; sourceTree = "<group>"; };
 		6633C46E1EFBB6BB006EF136 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../../../Library/Developer/Xcode/DerivedData/medicalConsultation-dlncmhyzorugfwgaolrrdvmsvefn/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
 		6633C46F1EFBB6BB006EF136 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = "../../../Library/Developer/Xcode/DerivedData/medicalConsultation-dlncmhyzorugfwgaolrrdvmsvefn/Build/Products/Debug-iphonesimulator/Locksmith/Locksmith.framework"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		6603A0871F79354000C7E986 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				662508E11F81585A00BC54CB /* RegisterViewController.swift */,
+				661883681FAA4A42007E4C8C /* RegisterViewController.swift */,
 				662508DF1F81584D00BC54CB /* loginViewController.swift */,
 				662508DD1F81584100BC54CB /* HomeViewController.swift */,
 				662508DB1F81582D00BC54CB /* ComposeViewController.swift */,
@@ -458,7 +458,7 @@
 				662508DC1F81582D00BC54CB /* ComposeViewController.swift in Sources */,
 				66150E981F49808E00CA87BE /* OtherInformationStep2ViewController.swift in Sources */,
 				665F42B41F06298900B19574 /* InvoiceComposer.swift in Sources */,
-				662508E21F81585A00BC54CB /* RegisterViewController.swift in Sources */,
+				661883691FAA4A42007E4C8C /* RegisterViewController.swift in Sources */,
 				66C952C51EF8F89B00C36E3D /* AppDelegate.swift in Sources */,
 				665F42B21F06298900B19574 /* AddItemViewController.swift in Sources */,
 				66DC1E2C1EFC374B00329E53 /* VoiceHomeViewController.swift in Sources */,
